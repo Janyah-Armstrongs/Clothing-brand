@@ -15,7 +15,8 @@
   </header>
 
   <!-- Sidebar Menu with Close Button -->
-  <nav id="dropdownMenu" class="dropdown-menu">
+  <nav id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="about.html">Upcoming</a>
@@ -49,9 +50,9 @@
 
   <!-- Sidebar Toggle Script -->
   <script>
-    function toggleDropdown() {
-      const sidebar = document.getElementById("dropdownMenu");
-      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    function toggleSidebar() {
+      const sidebar = document.getElementById("mySidebar");
+      sidebar.classList.toggle("show");
     }
   </script>
 
