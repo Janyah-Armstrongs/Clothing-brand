@@ -8,13 +8,13 @@
 </head>
 <body>
 
-  <!-- Header with Hamburger Menu -->
+  <!-- Header with 3-dots Menu Icon -->
   <header>
-    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    <div class="menu-icon" onclick="toggleSidebar()">⋮</div>
     <h1>TrendFit</h1>
   </header>
 
-  <!-- Sidebar Menu with Close Button -->
+  <!-- Sidebar Menu Sliding in from the Left -->
   <nav id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
     <a href="index.html">Home</a>
@@ -23,20 +23,17 @@
   </nav>
 
   <main>
-    <!-- Rotating Logo Section -->
     <section class="logo-section">
       <div class="logo-container">
         <img src="https://via.placeholder.com/150" alt="TrendFit Logo" class="rotating-logo" />
       </div>
     </section>
 
-    <!-- Welcome Text -->
     <section class="welcome">
       <h2>Welcome to TrendFit</h2>
       <p>Streetwear made for everyone.</p>
     </section>
 
-    <!-- About Preview on Home -->
     <section class="about-preview">
       <h2>About TrendFit</h2>
       <p>We’re a streetwear brand redefining urban fashion. Learn more about our journey and vision.</p>
@@ -48,11 +45,9 @@
     <p>&copy; 2025 TrendFit</p>
   </footer>
 
-  <!-- Sidebar Toggle Script -->
   <script>
     function toggleSidebar() {
-      const sidebar = document.getElementById("mySidebar");
-      sidebar.classList.toggle("show");
+      document.getElementById("mySidebar").classList.toggle("show");
     }
   </script>
 
