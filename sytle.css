@@ -113,3 +113,45 @@ body {
     width: 100%;
   }
   
+  /* Hamburger Menu Icon */
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+    color: white;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 4rem;
+    z-index: 1000;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar a:hover {
+    background-color: #333;
+  }
+  
+  /* Show Sidebar */
+  .sidebar.show {
+    width: 200px;
+  }
+  
