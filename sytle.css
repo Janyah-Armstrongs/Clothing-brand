@@ -148,6 +148,8 @@ body {
   
   .sidebar a:hover {
     background-color: #333;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
   }
   
   /* Show Sidebar */
@@ -155,3 +157,12 @@ body {
     width: 200px;
   }
   
+  /* Close Button (×) in Sidebar */
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
