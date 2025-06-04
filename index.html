@@ -10,13 +10,12 @@
 
   <!-- Header with Hamburger Menu -->
   <header>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-icon" onclick="toggleDropdown()">☰</div>
     <h1>TrendFit</h1>
   </header>
 
   <!-- Sidebar Menu with Close Button -->
-  <nav id="sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+  <nav id="dropdownMenu" class="dropdown-menu">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="about.html">Upcoming</a>
@@ -50,9 +49,9 @@
 
   <!-- Sidebar Toggle Script -->
   <script>
-    function toggleMenu() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.classList.toggle("show");
+    function toggleDropdown() {
+      const sidebar = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
   </script>
 
